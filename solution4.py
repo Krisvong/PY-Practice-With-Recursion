@@ -12,3 +12,23 @@ def power(a, b):
 # test
 result = power(2, 4)
 print(result)
+
+#bonus iteration
+def power(a, b):
+    if b == 0:
+        return 1  # Base case: Any number raised to the power of 0 is 1
+
+    result = 1  # Initialize the result to 1
+
+    if b > 0:  # If the exponent is positive
+        for _ in range(b):  # Multiply 'a' by itself 'b' times
+            result *= a
+    else:  # If the exponent is negative
+        for _ in range(abs(b)):  # Divide 1 by 'a' 'abs(b)' times to calculate the reciprocal
+            result /= a
+
+    return result  # Return the calculated result
+
+# test
+result = power(2, 4)
+print(result)

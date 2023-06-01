@@ -9,3 +9,12 @@ def print_natural_numbers(n):
 
 #test 
 print_natural_numbers(5)
+
+
+#bonus iteration
+def print_natural_numbers(n):
+    for i in range(1, n + 1):
+        print(i)
+
+#test 
+print_natural_numbers(5)

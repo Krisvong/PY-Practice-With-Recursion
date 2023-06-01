@@ -10,3 +10,12 @@ def print_numbers(n):
 
 #test 
 print_numbers(5)
+
+
+#bonus iteration
+def print_numbers(n):
+    for i in range(n, -1, -1):
+        print(i)  # Print the current value of i
+
+#test 
+print_numbers(5)
